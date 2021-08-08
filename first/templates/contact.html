@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="static/css/contact.css">
+<script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=7E5TrKHHK3nmcAFDVNhCNgj7wGWHvDrNufgP--XaFJauORoPy2x3K20fX7MS7NIfqUkQarBD-SiyZNrVT6825Z7W2inMJDTAyj9ldienibG5M-Q2-Sii_IjPJevnN_pHbAMqmPaPgbuKseV41SGpqQ" charset="UTF-8"></script></head>
+<body>
+    <div class="container">
+
+        <h1 class="brand"><span>Contact Us</span></h1>
+    
+        <div class="wrapper">
+    
+            <!-- COMPANY INFORMATION -->
+            <div class="company-info">
+                <h3>REROUTE FITNESS</h3>
+    
+                <ul>
+                    <li><i class="fa fa-road"></i> Banglore Bannerghata</li>
+                    <li><i class="fa fa-phone"></i>+9191764590</li>
+                    <li><i class="fa fa-envelope"></i> abc@gmail.com</li>
+                </ul>
+            </div>
+            <!-- End .company-info -->
+    
+            <!-- CONTACT FORM -->
+            <div class="contact">
+                <h3>E-mail Us</h3>
+    
+                <form action="contact" method="post" id="contact-form">
+                    {% csrf_token %}
+                    <p>
+                        <label>Name</label>
+                        <input type="text" name="name" id="name" required>
+                    </p>
+    
+                    <p>
+                        <label>Company</label>
+                        <input type="text" name="company" id="company">
+                    </p>
+    
+                    <p>
+                        <label>E-mail Address</label>
+                        <input type="email" name="email" id="email" required>
+                    </p>
+    
+                    <p>
+                        <label>Phone Number</label>
+                        <input type="text" name="phone" id="phone">
+                    </p>
+    
+                    <p class="full">
+                        <label>Message</label>
+                        <textarea name="message" rows="5" id="message" required></textarea>
+                    </p>
+    
+                    <p class="full">
+                        <button type="submit">Submit</button>
+                    </p>
+    
+                </form>
+                <!-- End #contact-form -->
+            </div>
+            <!-- End .contact -->
+    
+        </div>
+        <!-- End .wrapper -->
+    </div>
+    <!-- End .container -->
+</body>
+</html>
