@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(https://cdn.pixabay.com/photo/2017/04/27/08/29/man-2264825_1280.jpg);
+}
+.navbar{
+   background-color: 57837B;
+   height:80px;
+   width: 100%;
+}
+.logo{
+    color: white;
+    font-size: 40px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+.pages{
+    float: right;
+    margin: right;
+    list-style: none;
+    box-sizing: none;
+}
+.navbar ul li{
+    list-style: none;
+    box-sizing: border-box;
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+a:hover{
+    background-color:rgba(110, 110, 228, 0.349) ;
+    cursor: pointer;
+    transition: 0.5s;    
+}
