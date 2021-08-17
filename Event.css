@@ -1,0 +1,23 @@
+
+
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.box-shadow{
+  box-shadow: 0px 20px 10px rgba(0,0,0,0.5);
+}
+
+.btn:hover {
+  border-color: beige; 
+  color:orangered;
+  box-shadow: 0 0.5em 0.5em -0.4em orange;
+  transform: translateY(-0.25em);
+  cursor: pointer;
+
+}
