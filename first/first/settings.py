@@ -82,7 +82,7 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '3306',
         'USER': 'djangouser',
-        'PASSWORD': 'manvik123',
+        'PASSWORD': '',
     }
 }
 
